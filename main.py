@@ -62,7 +62,7 @@ while i == 1:
         except:
             pass
         start = current
-    if keyboard.is_pressed('q'):
+    if keyboard.is_pressed('p'):
         with open("save.txt", 'w') as code:
             try:
                 window.find_element(By.ID, "prefsButton").click()
@@ -79,7 +79,7 @@ while i == 1:
                 time.sleep(3)
         window.close()
         i = 0
-    elif keyboard.is_pressed('w'):
+    elif keyboard.is_pressed('o'):
         username = input("Enter username: ")
         print("Username is: " + username)
     current = int(time.time())
